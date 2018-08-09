@@ -35,7 +35,11 @@ urlpatterns = [
     # front page index page
     url(r'^$', blog.index_front, name='index_front'),
 
+    # admin
     url(r'^admin/', admin.site.urls),
+
+    # yandex mail
+    url(r'^f7e1eb1bf6ab\.html$', lambda r: HttpResponse("f4dae2ea72e5", content_type="text/plain")),
 ]
 
 urlpatterns += [
